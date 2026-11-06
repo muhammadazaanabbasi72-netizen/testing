@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Background */
+
+.main {
+    height: 100vh;
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Navbar */
+
+nav {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.signin {
+    background-color: #e50914;
+    color: white;
+
+    padding: 9px 18px;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.signin:hover {
+    background-color: #b20710;
+}
+
+/* Hero Section */
+
+.hero {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    width: 90%;
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    font-weight: bold;
+
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.hero h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+/* Email Box */
+
+.email-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.email-box input {
+    width: 65%;
+
+    padding: 18px 15px;
+
+    background: rgba(30, 30, 30, 0.8);
+
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    color: white;
+    font-size: 16px;
+}
+
+.email-box button {
+    background-color: #e50914;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 15px 25px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.email-box button:hover {
+    background-color: #b20710;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    .email-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-box input {
+        width: 100%;
+    }
+
+    .email-box button {
+        font-size: 18px;
+    }
+}
